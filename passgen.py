@@ -3,6 +3,9 @@
 import argparse
 import random
 
+current_dir = os.path.dirname(os.path.realpath(__file__))
+os.chdir(current_dir)
+
 seperators=['1','2','3','4','5','6','7','8','9','0','/','%','_','-','@','$','&','?','!','42','*','+','#', '=']
 
 def parser():
