@@ -2,6 +2,7 @@
 
 import argparse
 import random
+import os
 
 current_dir = os.path.dirname(os.path.realpath(__file__))
 os.chdir(current_dir)
