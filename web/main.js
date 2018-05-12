@@ -1,10 +1,10 @@
 var splitters = ['1','2','3','4','5','6','7','8','9','0','/','%','_','-','@','$','&','?','!','42','*','+','#', '='];
 var words = 5;
-var cap = false;
+var cap = true;
 var ws = false;
 var wordlist;
 
-$.get("/web/eff_large_wordlist.txt", function (data) {
+$.get("/word_list", function (data) {
     wordlist = data.split("\n");
     generatePassword();
 });

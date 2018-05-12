@@ -16,6 +16,7 @@ def parser():
     parser.add_argument("-ca", "--capitalize", dest="capitalize", action="store_false", required=False, help="Turn off random capitalizing of words")
     return parser.parse_args()
 
+
 def main():
     args = parser()
     passwd = ''
@@ -25,13 +26,13 @@ def main():
             seperator = random.choice(seperators)
         else:
             seperator = ' '
-        
+
         lines = open('word_list').read().splitlines()
         myline = random.choice(lines)
 
         if args.capitalize and random.choice([True, False]):
             myline = myline.capitalize()
-        
+
         passwd += myline + seperator
 
     print(passwd.strip())

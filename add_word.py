@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 def main():
     while True:
         word = input("Word to add\n")
@@ -15,4 +16,5 @@ def main():
                 file.write('\n' + word)
 
 
-if __name__ == "__main__": main()
+if __name__ == "__main__":
+    main()
